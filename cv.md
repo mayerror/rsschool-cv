@@ -1,0 +1,35 @@
+# Sergey Masiuk
+
+
+<mayerror@gmail.com> | +375 29 7903981
+
+## About myself:
+  I'm 32 years. I am an electrical design engineer. I want to get a new profession of front-end developer and work in it.
+
+## Skills:
+* Programming skills
+    * HTML
+    * CSS
+    * JavaScript
+
+* Other computer skills
+    * Blender
+    * Autocad
+    * CadElectro
+
+## Code example:
+```javascript
+function findShort(s){
+  return s.split(' ').reduce((acc,item) => {
+     if (acc > item.length) {
+        acc = item.length;
+     } 
+    return acc;
+  },500);
+}
+```
+## Education:
+* 2011 - Bachelor of Information systems and technologies, Belarusian National Technical University, Minsk, Belarus
+
+## Languages:
+* English: A1

@@ -29,3 +29,7 @@ function findShort(s){
 }
 ```
 ## Education:
+* 2011 - Bachelor of Information systems and technologies, Belarusian National Technical University, Minsk, Belarus
+
+## Languages:
+* English: A1

@@ -1,4 +1,5 @@
 /* tag selectors */
+
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
@@ -15,17 +16,21 @@ li {
   color: rgb(105, 105, 105);
 }
 
+code {
+  font-family: 'Courier New', sans-serif;
+}
+
 h1 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: rgb(19, 123, 228);
 }
 
 h3 {
-    font-weight: 700;
-    text-align: right;
-    padding-right: 4rem;
-    margin-block-start: 0.75em;
+  font-weight: 700;
+  text-align: right;
+  padding-right: 4rem;
+  margin-block-start: 0.75em;
 }
 
 body {
@@ -34,39 +39,64 @@ body {
 }
 
 header {
-    border-bottom: 1px solid rgb(197, 197, 197);
+  border-bottom: 2px solid rgb(19, 123, 228);
+  margin-bottom: 1rem;
+}
+
+footer {
+  padding: 3rem 0;
+  margin-top: 2rem;
+  border-top: 2px solid rgb(19, 123, 228);
 }
 
 img {
-display: block;
-box-sizing: border-box;
+  display: block;
+  box-sizing: border-box;
   padding: 3rem;
   width: 100%;
 }
 
-section {
-    margin-top: 1rem;
+ul>li {
+  padding-bottom: 0.8rem;
 }
-ul > li {
-    padding-bottom: 0.8rem;
+
+footer .flex-box-horiz-2 h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: left;
+  padding-right: 0;
 }
+
+footer .flex-box-horiz-1 h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
 /* class selectors */
+
 .flex-container-horiz {
   display: flex;
   flex-wrap: wrap;
 }
 
 .flex-container-vert {
-    height: 100%;
+  height: 100%;
   flex-direction: column;
   display: flex;
   justify-content: center;
 }
 
+.flex-box-horiz-1 {
+  flex: 1;
+}
+
+.flex-box-horiz-2 {
+  flex: 3;
+}
+
 .contact-box {
   display: flex;
   margin-bottom: 3rem;
-  /* justify-content: center; */
 }
 
 .mail {
@@ -78,15 +108,15 @@ ul > li {
   padding-left: 1rem;
 }
 
-.flex-box-horiz-1 {
-    flex: 1;
-}
-
-.flex-box-horiz-2 {
-    flex: 3;
-}
-
 .contact-box h2 {
-    font-size: 1.2rem;
-    margin-top: 0;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.flex-box-table {
+  flex: 1;
+}
+
+.flex-box-table>p {
+  font-weight: 700;
 }

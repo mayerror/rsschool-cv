@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+body {
+  width: 60%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-flexbox {
+  flex: 5;
+  width: 100%;
+  justify-content: center;
+}
+
+img {
+  padding: 5rem;
+  flex: 1;
+  display: block;
+  width: 25%;
+}
+
+.contact-box {
+    display: flex;
+}

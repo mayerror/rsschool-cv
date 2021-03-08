@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>Sergey Masiuk's CV</title>
+</head>
+
+<body>
+  <header class="flex-container-horiz">
+    <div class="flex-box-horiz-1"><img src="/images/ava01.jpg" alt="My photo"></div>
+    <div class="flex-box-horiz-2">
+      <div class="flex-container-vert">
+        <h1>Sergey Masiuk</h1>
+        <ul class="contact-box">
+          <li class="mail">
+            <h2>Email</h2>
+            <a href="mailto:mayerror@gmail.com">mayerror@gmail.com</a>
+          </li>
+          <li class="phone">
+            <h2>Phone</h2>
+            <a href="tel:+375297903981">+375-297903981</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <article>
+      <section class="flex-container-horiz">
+        <div class="flex-box-horiz-1">
+          <h3>About myself</h3>
+        </div>
+        <div class="flex-box-horiz-2">
+          <p>I'm 32 years old. I am an electrical design engineer. I want to get a new profession of front-end developer and work in it.</p>
+        </div>
+      </section>
+      <section class="flex-container-horiz">
+        <div class="flex-box-horiz-1">
+          <h3>Skills</h3>
+        </div>
+        <div class="flex-box-horiz-2">
+          <div class="flex-container-horiz">
+            <div class="flex-box-table">
+              <p>Programming skills:</p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div class="flex-box-table">
+              <p>Other computer skills:</p>
+              <ul>
+                <li>Blender</li>
+                <li>Autocad</li>
+                <li>CadElectro</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="flex-container-horiz">
+        <div class="flex-box-horiz-1">
+          <h3>Code example</h3>
+        </div>
+        <div class="flex-box-horiz-2">
+<pre><code>function findShort(s){
+  return s.split(' ').reduce((acc,item) => {
+    if (acc > item.length) {
+      acc = item.length;
+    } 
+    return acc;
+  },500);
+}</code></pre>
+        </div>
+      </section>
+      <section class="flex-container-horiz">
+        <div class="flex-box-horiz-1">
+          <h3>Education</h3>
+        </div>
+        <div class="flex-box-horiz-2">
+          <p>2011 - Bachelor of Information systems and technologies, Belarusian National Technical University, Minsk, Belarus</p>
+        </div>
+      </section>
+      <section class="flex-container-horiz">
+        <div class="flex-box-horiz-1">
+          <h3>Languages</h3>
+        </div>
+        <div class="flex-box-horiz-2">
+          <p>English: A1</p>
+        </div>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <div class="flex-container-horiz">
+      <div class="flex-box-horiz-1">
+        <a href="https://github.com/mayerror">GitHub</a>
+      </div>
+      <div class="flex-box-horiz-3">
+        <h3>2021 © SERGEY MASIUK</h3>
+      </div>
+      <div class="flex-box-horiz-1">
+        <a href="https://rs.school/js/">
+          <img src="/images/rs_school_js.svg" width="30" height="30" alt="JavaScript Course">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

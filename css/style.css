@@ -191,3 +191,47 @@ section .hljs-keyword {
   width: 100%;
   height: 100%;
 }
+
+@media (max-width: 1199px) {
+  body {
+    width: 90%;
+  }
+
+  h3 {
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+  footer .flex-box-horiz-1>a, footer h2 {
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+  .videoWrapper {
+    margin: 0 auto;
+    position: unset;
+    padding-bottom: 0;
+    max-width: 560px;
+    height: 320px;
+  }
+  .videoWrapper iframe {
+    position: unset;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .flex-container-horiz {
+    flex-direction: column;
+  }
+  header img {
+    top: 110%;
+    left: auto;
+    right: 20%;
+  }
+  header img {
+    position: unset; 
+    top: auto;
+    left: auto;
+    margin: 0 auto;
+    transform: none;
+}
+}

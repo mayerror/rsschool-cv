@@ -114,25 +114,26 @@
         </div>
         <div class="flex-box-horiz-2">
   <pre><code class="js">function cache(func) {
-    let cache = {};
-    return (...n) => {
-      let cashStr = '';
-      if (n.length) {
-        cashStr = JSON.stringify(n);
-      }
-      if (cashStr in cache) {
-        return cache[cashStr];
-      } else {
-        let result;
-        if (!n.length) {
-          result = func();
-        } else {
-          result = func(...n);
-        }
-        cache[cashStr] = result;
-        return result;
-      }
+  let cache = {};
+  return (...n) => {
+    let cashStr = '';
+    if (n.length) {
+      cashStr = 
+      JSON.stringify(n);
     }
+    if (cashStr in cache) {
+      return cache[cashStr];
+    } else {
+      let result;
+      if (!n.length) {
+        result = func();
+      } else {
+        result = func(...n);
+      }
+      cache[cashStr] = result;
+      return result;
+    }
+  }
   }</code></pre>
         </div>
       </section>

@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   <!-- <base href="https://mayerror.github.io/rsschool-cv/"> -->
   <title>Sergey Masiuk's CV</title>
 </head>
@@ -15,10 +18,39 @@
 <body>
   <header class="flex-container-horiz">
     <div class="flex-box-horiz-1 center">
-      <img src="/images/ava01.jpg" alt="My photo">
+      <img src="/images/ava01.jpg" alt="Sergey's photo">
     </div>
     <div class="flex-box-horiz-2">
       <div class="flex-container-vert">
+        <nav>
+          <ul class="flex-container-horiz">
+            <li>
+              <a href="#About">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#Skills">
+                Skills
+              </a>
+            </li>
+            <li>
+              <a href="#Code">
+                Code
+              </a>
+            </li>
+            <li>
+              <a href="#Education">
+                Education
+              </a>
+            </li>
+            <li>
+              <a href="#Languages">
+                Languages
+              </a>
+            </li>
+          </ul>
+        </nav>
         <h1>Sergey Masiuk</h1>
         <ul class="contact-box">
           <li class="mail">
@@ -34,8 +66,10 @@
     </div>
   </header>
   <main>
+    <article>
       <section class="flex-container-horiz">
         <div class="flex-box-horiz-1">
+          <a name="About"></a>
           <h3>About myself</h3>
         </div>
         <div class="flex-box-horiz-2">
@@ -44,6 +78,7 @@
       </section>
       <section class="flex-container-horiz">
         <div class="flex-box-horiz-1">
+          <a name="Skills"></a>
           <h3>Skills</h3>
         </div>
         <div class="flex-box-horiz-2">
@@ -69,21 +104,36 @@
       </section>
       <section class="flex-container-horiz">
         <div class="flex-box-horiz-1">
+          <a name="Code"></a>
           <h3>Code example</h3>
         </div>
         <div class="flex-box-horiz-2">
-<pre><code>function findShort(s){
-  return s.split(' ').reduce((acc,item) => {
-    if (acc > item.length) {
-      acc = item.length;
-    } 
-    return acc;
-  },500);
-}</code></pre>
+  <pre><code class="js">function cache(func) {
+    let cache = {};
+    return (...n) => {
+      let cashStr = '';
+      if (n.length) {
+        cashStr = JSON.stringify(n);
+      }
+      if (cashStr in cache) {
+        return cache[cashStr];
+      } else {
+        let result;
+        if (!n.length) {
+          result = func();
+        } else {
+          result = func(...n);
+        }
+        cache[cashStr] = result;
+        return result;
+      }
+    }
+  }</code></pre>
         </div>
       </section>
       <section class="flex-container-horiz">
         <div class="flex-box-horiz-1">
+          <a name="Education"></a>
           <h3>Education</h3>
         </div>
         <div class="flex-box-horiz-2">
@@ -92,12 +142,14 @@
       </section>
       <section class="flex-container-horiz">
         <div class="flex-box-horiz-1">
+          <a name="Languages"></a>
           <h3>Languages</h3>
         </div>
         <div class="flex-box-horiz-2">
           <p>English: A1</p>
         </div>
       </section>
+    </article>
   </main>
   <footer>
     <div class="flex-container-horiz">
@@ -105,7 +157,7 @@
         <a href="https://github.com/mayerror">GitHub</a>
       </div>
       <div class="flex-box-horiz-3">
-        <h3>2021 © Sergey Masiuk</h3>
+        <h2>2021 © Sergey Masiuk</h2>
       </div>
       <div class="flex-box-horiz-1">
         <a href="https://rs.school/js/">
@@ -115,4 +167,5 @@
     </div>
   </footer>
 </body>
+
 </html>

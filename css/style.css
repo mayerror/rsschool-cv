@@ -1,6 +1,8 @@
 /* tag selectors */
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -19,20 +21,26 @@ li {
 code { font-family: 'Courier New', sans-serif; }
 
 h1 {
+  padding: 2rem 0;
   font-size: 2.5rem;
   font-weight: 700;
   color: rgb(19, 123, 228);
 }
 
+h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
 h3 {
   padding-right: 4rem;
-  margin-block-start: 0.75em;
   font-weight: 700;
   text-align: right;
   font-size: 1.4rem;
 }
 
-footer h3 {
+
+footer h2 {
   font-size: 1.2rem;
 }
 
@@ -43,8 +51,8 @@ body {
   min-height:100vh;
   margin: 0 auto;
   width: 60%;
-  background: rgb(131,58,180);
-  background: linear-gradient(180deg, rgba(131,58,180,0.29735644257703087) 0%, rgba(252,176,69,0.33657212885154064) 53%, rgba(29,253,224,0.16010154061624648) 100%);
+  background: rgb(252, 247, 255);
+  background: linear-gradient(180deg, rgba(237, 229, 243, 0.297) 0%, rgba(252,176,69,0.25) 53%, rgba(29,253,224,0.22) 100%);
 }
 
 header {
@@ -56,11 +64,34 @@ header .flex-box-horiz-1 {
   position: relative;
 }
 
+nav li {
+  list-style-type: none;
+  cursor: pointer;
+}
+nav li a {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  /* color: rgb(1, 19, 51); */
+}
+nav li a:hover {
+  /* font-weight: 700; */
+  color: rgb(184, 165, 0);
+}
+
+section {
+  margin-top: 2.5rem;
+}
+
+section h3 {
+  color:rgb(184, 165, 0);
+}
+
 footer {
   padding: 3rem 0;
   margin-top: 2rem;
   border-top: 2px solid rgb(19, 123, 228);
 }
+
 header img {
   position: absolute;
   top: 50%;
@@ -79,7 +110,9 @@ img {
   width: 100%;
 }
 
-ul>li { padding-bottom: 0.8rem; }
+ul>li { 
+  padding-top: 0.8rem;
+ }
 
 footer .flex-box-horiz-3 h3 {
   margin: 0;
@@ -101,9 +134,13 @@ a>img { padding: 0; }
 
 /* class selectors */
 
+section .hljs-keyword {
+  color:rgb(1, 71, 151);
+}
 .flex-container-horiz {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .flex-container-vert {
@@ -120,7 +157,7 @@ a>img { padding: 0; }
 .flex-box-horiz-3 { flex: 2; }
 
 .contact-box {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   display: flex;
   list-style-type: none;
   padding-left: 0;

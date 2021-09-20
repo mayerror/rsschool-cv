@@ -29,11 +29,22 @@ h3 {
   margin-block-start: 0.75em;
   font-weight: 700;
   text-align: right;
+  font-size: 1.4rem;
 }
 
+footer h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
 body {
+  min-height:100vh;
   margin: 0 auto;
   width: 60%;
+  background: rgb(131,58,180);
+  background: linear-gradient(180deg, rgba(131,58,180,0.29735644257703087) 0%, rgba(252,176,69,0.33657212885154064) 53%, rgba(29,253,224,0.16010154061624648) 100%);
 }
 
 header {
@@ -41,14 +52,28 @@ header {
   border-bottom: 2px solid rgb(19, 123, 228);
 }
 
+header .flex-box-horiz-1 {
+  position: relative;
+}
+
 footer {
   padding: 3rem 0;
   margin-top: 2rem;
   border-top: 2px solid rgb(19, 123, 228);
 }
+header img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  max-width: 180px;
+  width: 90%;
+}
 
 img {
-  padding: 3rem;
+  /* padding: auto 10% auto; */
   display: block;
   box-sizing: border-box;
   width: 100%;
